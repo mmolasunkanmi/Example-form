@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Data Form</title>
+</head>
+<body>
+    <h1>Example Form</h1>
+    <form action="" method="post">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" required><br><br>
+        <label for="Password">Password:</label>
+        <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{5,}"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" name="quality" id="age" required><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday" id="birthday" required><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="gender" required>male
+        <input type="radio" name="gender" id="gender" required>Female <br><br>
+        <label for="vehicle">Choose your vehicle(s):</label><br>
+        <input type="checkbox" name="vehicle1" value="Bike" required>Bike <br>
+        <input type="checkbox" name="vehicle" value="car" required>Car <br><br>
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" name="favcolor" value="color" required><br><br>
+        <label for="upfile">Upload a file:</label>
+        <input type="file" name="upfile" value="file" required><br><br>
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+</html>
